@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOL</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Prompt|Montserrat');
+        .container {
+            margin: 0px;
+            top: 0;
+            bottom: 0;
+            left: 5vw;
+            right: 5vw;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .top {
+            height: 45vh;
+        }
+
+        .text {
+            text-align: center;
+            font-family: Montserrat, Prompt, Avenir, Sukhumvit set, Helvetica, Montserrat, Ariel, sans-serif;
+            font-weight: bold;
+            font-size: 5vh
+        }
+
+        .middle {
+            height: 30vh;
+        }
+
+        p {
+            margin: 0px;
+            animation: color-change 1s infinite;
+        }
+
+        @keyframes color-change {
+            0% {
+                color: #9400D3;
+            }
+            20% {
+                color: #4B0082;
+            }
+            40% {
+                color: #0000FF;
+            }
+            60% {
+                color: rgb(22, 177, 22);
+            }
+            80% {
+                color: #FF7F00;
+            }
+            100% {
+                color: #FF0000;
+            }
+        }
+
+        .trollface {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            animation: trollface 15s infinite;
+        }
+
+        @keyframes trollface {
+            0% {
+                top: 10vh;
+                left: -100vw;
+            }
+            100% {
+                top: 10vh;
+                left: 110vw;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top"></div>
+        <p class="text">ลิ้วพรุนไม่เคยเป็นแชมป์พรีเมียร์ลีก LOLOLOL
+        </p>
+        <div class="middle"></div>
+        <p class="text delay" style="font-size: 3vh">
+            <a href="index.html">BACK</a>
+        </p>
+    </div>
+    <img src="../img/TrollFace.jpg" style="height:40vw" alt="LOL" class="trollface">
+</body>
+</html>
