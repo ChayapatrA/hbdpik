@@ -10,7 +10,7 @@
         html {
             height: 100%;
             margin: 0;
-            font: 400 15px/1.8 "Montserrat","Kanit", sans-serif;
+            font: 400 15px/1.8 "Montserrat", "Kanit", sans-serif;
             color: #777;
             overflow: hidden;
             animation: overflow 17s;
@@ -56,9 +56,10 @@
             background-image: url("img/fishmarket.jpg");
             min-height: 70vh;
         }
-        .family{
+
+        .family {
             background-image: url("img/family.jpg");
-            min-height: 100vh; 
+            min-height: 100vh;
         }
 
         .caption span.border {
@@ -72,7 +73,7 @@
         h3 {
             letter-spacing: 5px;
             text-transform: uppercase;
-            font: 20px "Montserrat","Kanit", sans-serif;
+            font: 20px "Montserrat", "Kanit", sans-serif;
             color: #111;
         }
 
@@ -104,17 +105,30 @@
             font-family: Montserrat;
             animation-delay: 3s;
         }
+
         p div {
-            font-size:30px;
-            font: 400 15px/1.8 "Montserrat","Kanit", sans-serif;
+            font-size: 30px;
+            font: 400 15px/1.8 "Montserrat", "Kanit", sans-serif;
         }
 
         a:link {
-color:  #FFFFFF;
-}
-a:visited {
-color: #FFFFFF;
-}
+            color: #FFFFFF;
+        }
+
+        a:visited {
+            color: #FFFFFF;
+        }
+
+        @media only screen and (max-device-width: 1024px) {
+            .top,
+            .operaHouse,
+            .garden,
+            .bridge,
+            .fishmarket,
+            .family {
+                background-attachment: scroll;
+            }
+        }
 
         @keyframes overflow {
             to {
@@ -126,31 +140,31 @@ color: #FFFFFF;
 
         @media only screen and (max-device-width: 1024px) {
             .top {
-            background-image: url("img/topsmall.jpg");
-            width: 100vw;
-        }
+                background-image: url("img/topsmall.jpg");
+                width: 100vw;
+            }
 
-        .operaHouse {
-            min-height: 50vh;
-        }
+            .operaHouse {
+                min-height: 50vh;
+            }
 
-        .garden {
-            min-height: 70vh;
-        }
+            .garden {
+                min-height: 70vh;
+            }
 
 
-        .bridge {
-            min-height: 50vh;
-        }
+            .bridge {
+                min-height: 50vh;
+            }
 
-        .fishmarket {
-            min-height: 50vh;
-        }
-        .family{
-            min-height: 100vh; 
-        }
-                    
-        .scrollDown {
+            .fishmarket {
+                min-height: 50vh;
+            }
+            .family {
+                min-height: 100vh;
+            }
+
+            .scrollDown {
                 font-size: 4vw;
                 margin-top: 90vh;
             }
@@ -174,13 +188,13 @@ color: #FFFFFF;
 </head>
 
 <body>
-        <audio autoplay loop>
-                <source src=".song/NamidaSurprise.mp3">
-          </audio>
+    <audio autoplay loop>
+        <source src=".song/NamidaSurprise.mp3">
+    </audio>
 
     <div class="top">
-            <div class="animated fadeInUp title brightness">HBD Pik</div>
-            <div class="scrollDown animated fadeInDown">scroll down ↓</div>
+        <div class="animated fadeInUp title brightness">HBD Pik</div>
+        <div class="scrollDown animated fadeInDown">scroll down ↓</div>
     </div>
 
     <div style="color: #777;background-color:white;text-align:center;padding:5vw 15vw;text-align: justify;">
@@ -216,27 +230,29 @@ color: #FFFFFF;
     </div>
 
     <div class="bridge">
-            <div class="caption">
-                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Sydney Harbour bridge - Sydney</span>
-            </div>
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Sydney Harbour bridge - Sydney</span>
         </div>
-    
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-                <p>ง่วง - ปบ.</p>
-            </div>
-        </div>
+    </div>
 
-        <div class="fishmarket">
-                <div class="caption">
-                    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Fish market - Sydney</span>
-                </div>
-            </div>
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>ง่วง - ปบ.</p>
+        </div>
+    </div>
+
+    <div class="fishmarket">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Fish market - Sydney</span>
+        </div>
+    </div>
 
 
     <div class="family">
-            <div class="animated fadeInUp title brightness">Happy 14 YO</div>
-            <div class="scrollDown animated fadeInDown"><a href="troll.html">CLICK HERE FOR FUN FACT</a></div>
+        <div class="animated fadeInUp title brightness">Happy 14 YO</div>
+        <div class="scrollDown animated fadeInDown">
+            <a href="troll.html">CLICK HERE FOR FUN FACT</a>
+        </div>
     </div>
 
 </body>
